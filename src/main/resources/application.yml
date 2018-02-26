@@ -1,0 +1,24 @@
+spring:
+  application:
+    name: simple-service
+    
+#disable basic authentication as spring cloud enables it by default
+security:
+  basic:
+    enabled: false
+
+#disable registering with eureka when running locally    
+eureka:
+  client:
+    enabled: false
+
+endpoints:
+  routes:
+    sensitive: false
+    
+management:
+  security:
+    enabled: false   
+
+server:
+  port: 8081    
